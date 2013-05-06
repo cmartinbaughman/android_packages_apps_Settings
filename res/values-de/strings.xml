@@ -1264,8 +1264,8 @@
     <string name="development_settings_summary" msgid="1815795401632854041">"Optionen zur App-Entwicklung festlegen"</string>
     <string name="enable_adb" msgid="7982306934419797485">"USB-Debugging"</string>
     <string name="enable_adb_summary" msgid="4881186971746056635">"Debugmodus bei Anschluss über USB"</string>
-    <string name="bugreport_in_power" msgid="4548816486587403971">"Fehlerberichte im Menü \"Akku\""</string>
-    <string name="bugreport_in_power_summary" msgid="5764234382355067053">"Fügt die Option für den Fehlerbericht im Menü \"Akku\" hinzu"</string>
+    <string name="bugreport_in_power" msgid="4548816486587403971">"Fehlerberichte im Ein/Aus-Menü</string>
+    <string name="bugreport_in_power_summary" msgid="5764234382355067053">Option für den Fehlerbericht im Ein/Aus-Tasten-Menü anzeigen</string>
     <string name="keep_screen_on" msgid="1146389631208760344">"Aktiv lassen"</string>
     <string name="keep_screen_on_summary" msgid="2173114350754293009">"Display wird beim Laden nie in den Ruhezustand versetzt"</string>
     <string name="allow_mock_location" msgid="2787962564578664888">"Falsche Standorte"</string>
@@ -2093,7 +2093,7 @@
 
     <!-- Performance settings - Warning dialog -->
     <string name="performance_settings_warning_title">VORSICHT</string>
-    <string name="performance_settings_warning">Diese Optionen beeinflussen die Leistung des Systems. Die Optionen sind zum Experimentieren gedacht - bitte keine Fehler melden, wenn die Standardeinstellungen geändert wurden.</string>
+    <string name="performance_settings_warning">Diese experimentellen Einstellungen beeinflussen die Leistung und Stabilität des Systems.\n\nBitte keine Fehler melden, wenn die Standardeinstellungen geändert wurden.</string>
 
     <!-- Performance settings - Processor settings title -->
     <string name="processor_title">Prozessor</string>
@@ -2133,15 +2133,15 @@
     <string name="pref_zram_summary">Speicherinhalte für mehr virtuellen Speicher mit zRAM komprimieren (Neustart erforderlich)</string>
 
     <!-- KSM -->
-    <string name="pref_ksm_title">Kernel Samepage Merging</string>
-    <string name="pref_ksm_summary">KSM verringert den Speicherbedarf, benötigt aber Rechenleistung</string>
+    <string name="pref_ksm_title">KSM</string>
+    <string name="pref_ksm_summary">Kernel-SamePage-Merging (KSM) verringert den Speicherbedarf, benötigt aber mehr Rechenleistung</string>
 
     <!-- Purgeable assets -->
     <string name="pref_purgeable_assets_title">Freigabe von Ressourcen</string>
     <string name="pref_purgeable_assets_summary">Erlaubt dem System, Speicherbereiche von nicht mehr benutzten Bildern freizugeben, um mehr RAM bereitzustellen (Neustart erforderlich)</string>
 
     <!-- Performance settings - Dithering -->
-    <string name="pref_use_dithering_title">Grafik-Verbesserung</string>
+    <string name="pref_use_dithering_title">Grafikverbesserung</string>
     <string name="dithering_no_dither">Dithering deaktivieren</string>
     <string name="dithering_color_banding">Streifige Farbverläufe beheben (Standard)</string>
     <string name="dithering_blur_effect">Streifige Farbverläufe und Unschärfe beheben</string>
@@ -2301,6 +2301,10 @@
     <string name="hardware_keys_action_voice_search">Sprachsuche</string>
     <string name="hardware_keys_action_in_app_search">In-App-Suche</string>
 
+    <!-- Swap volume buttons when the screen is rotated -->
+    <string name="swap_volume_buttons_title">Lautstärketasten umkehren</string>
+    <string name="swap_volume_buttons_summary">Belegung der Lautstärketasten umkehren, wenn das Gerät gedreht wird</string>
+
     <!-- Power widget -->
     <string name="power_widget_title">Energie-Widget</string>
     <string name="title_expanded_widget">Energiesteuerung</string>
@@ -2382,7 +2386,7 @@
     <string name="advanced_settings_title">Erweitert</string>
 
     <!-- IME switcher notifcation -->
-    <string name="ime_switcher_notify">Auswahl-Benachrichtigung</string>
+    <string name="ime_switcher_notify">Auswahlbenachrichtigung</string>
     <string name="ime_switcher_notify_summary">Benachrichtigung zur Auswahl der Eingabemethode in der Statusleiste anzeigen</string>
 
     <!-- Status bar -->
@@ -2490,7 +2494,7 @@
     <string name="tiles_reset_message">Auf Standard zurücksetzen?</string>
 
     <!-- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Bewegung des Cursors mithilfe der Lautstärkewippe</string>
+    <string name="volume_key_cursor_control_title">Cursorsteuerung mit Lautstärkewippe</string>
     <string name="volume_key_cursor_control_off">Deaktiviert</string>
     <string name="volume_key_cursor_control_on">Lautstärkewippe oben/unten bewegt den Cursor nach links/rechts</string>
     <string name="volume_key_cursor_control_on_reverse">Lautstärkewippe oben/unten bewegt den Cursor nach rechts/links</string>
@@ -2526,7 +2530,7 @@
     <string name="accessibility_home_button_answers_call_prerefence_title">Anruf mit Home-Taste annehmen</string>
 
     <!-- Navigation bar -->
-    <string name="navigation_bar_title">Navigationsleiste</string>
+    <string name="navigation_bar_title">Schaltflächen</string>
     <string name="navigation_bar_help_text">1 - Schloss-Icon berühren, um zu beginnen\n\n2 - Eine Schaltfläche berühren, um ihr eine Funktion zuzuweisen oder diese zu ändern\n\n3 - Eine Schaltfläche gedrückt halten, um sie zu verschieben\n\n4 - Schloss-Icon erneut berühren, um die Änderungen zu speichern\n\n5 - Reset-Icon berühren, um die Vorgaben wiederherzustellen\n\n</string>
     <string name="navigation_bar_tips">\u2022 Eine Funktion kann nur einer Schaltfläche gleichzeitig zugewiesen werden\n\n\u2022 Die Funktion der Home-Schaltfläche kann nicht verändert werden\n\n\u2022 Die seitlichen Schaltflächen können nicht verschoben werden</string>
     <string name="navigation_bar_tips_title">Schnellhilfe</string>
@@ -2583,6 +2587,55 @@
     <string name="auto_brightness_menu_edit_lux">Bearbeiten</string>
     <string name="auto_brightness_menu_split">Aufteilen</string>
     <string name="auto_brightness_menu_remove">Entfernen</string>
+
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">Erweitertes Neustartmenü</string>
+    <string name="advanced_reboot_summary">Bei entsperrtem Bildschirm dem Neustartmenü Optionen für Neustart in Recovery und Bootloader hinzufügen</string>
+
+    <!-- Volume adjust sounds -->
+    <string name="volume_adjust_sounds_enable_title">Änderungston</string>
+    <string name="volume_adjust_sounds_enable_summary">Beim Anpassen der Lautstärke mit der Lautstärkewippe einen Ton abspielen</string>
+
+    <!-- Advanced lockpattern settings -->
+    <string name="lockpattern_settings_enable_error_path_title">Fehler anzeigen</string>
+    <string name="lockpattern_settings_enable_dots_title">Punkte anzeigen</string>
+
+    <!-- Navigation bar buttons and shortcuts category title -->
+    <string name="navigation_bar_category">Navigationsleiste</string>
+
+    <!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">Schnellstart-Verknüpfungen</string>
+    <string name="navring_target_reset_message">Schnellstart-Verknüpfungen auf Standard zurücksetzen?</string>
+    <string name="navring_target_reset">Schnellstart-Verknüpfungen zurückgesetzt</string>
+    <string name="navring_target_save">Schnellstart-Verknüpfungen gespeichert</string>
+    <string name="navring_action_open_ime_switcher">Eingabemethode wählen</string>
+    <string name="navring_action_kill_app">App schließen</string>
+    <string name="navring_action_none">Keine</string>
+    <string name="navring_action_take_screenshot">Bildschirmfoto</string>
+    <string name="navring_action_ring_vibrate">Ton | Vibration</string>
+    <string name="navring_action_ring_silent">Ton | Lautlos</string>
+    <string name="navring_action_ring_vibrate_silent">Ton | Vibration | Lautlos</string>
+    <string name="navring_action_screen_off">Bildschirm sperren</string>
+    <string name="navring_action_torch">Taschenlampe</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">Aktion auswählen</string>
+
+    <!-- Pie control -->
+    <string name="pie_control_title">Pie-Navigation</string>
+    <string name="pie_control_enabled">Ist bei erweitertem Desktop aktiviert</string>
+    <string name="pie_control_disabled">Deaktiviert</string>
+    <string name="pie_control_size">Größe der Navigationstasten</string>
+    <string name="pie_control_trigger_positions">Ansteuerungsposition</string>
+    <string name="pie_control_trigger_left">Linker Bildschirmrand</string>
+    <string name="pie_control_trigger_bottom">Unterer Bildschirmrand</string>
+    <string name="pie_control_trigger_right">Rechter Bildschirmrand</string>
+    <string name="pie_control_trigger_top">Oberer Bildschirmrand</string>
+    <string name="pie_control_trigger_top_summary">Es werden nur die Navigationstasten angezeigt</string>
+
+    <!-- Ad-Hoc network -->
+    <string name="wifi_mode">Modus</string>
+    <string name="wifi_mode_ibss">Ad-Hoc-Netzwerk (IBSS)</string>
+    <string name="wifi_mode_ibss_short">Ad-Hoc</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>

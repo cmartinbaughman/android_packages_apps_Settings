@@ -1636,7 +1636,7 @@
     <string name="show_screen_updates" msgid="5470814345876056420">"Mostrar atualiz. de sup."</string>
     <string name="show_screen_updates_summary" msgid="2569622766672785529">"Piscar superfícies de toda a janela ao atualizar"</string>
     <string name="show_hw_screen_updates" msgid="5036904558145941590">"Mostrar atualiz. da GPU"</string>
-    <string name="show_hw_screen_updates_summary" msgid="1115593565980196197">"Piscar visualizações em janelas ao desenhar c/GPU"</string>
+    <string name="show_hw_screen_updates_summary" msgid="1115593565980196197">"Piscar visualizações em janelas ao renderizar c/ GPU"</string>
     <string name="show_hw_layers_updates" msgid="5645728765605699821">"Atual. camad. de hardware"</string>
     <string name="show_hw_layers_updates_summary" msgid="5296917233236661465">"Piscar camadas de hardware em verde ao atualizar"</string>
     <string name="show_hw_overdraw" msgid="1136884304711318251">"Mostrar overdraw da CPU"</string>
@@ -1805,7 +1805,7 @@
     <string name="user_add_user_message_long" msgid="2278524063301283723">"Compartilhe este dispositivo com outras pessoas criando usuários adicionais. Cada usuário terá seu próprio espaço, que poderá personalizar com seus próprios aplicativos, plano de fundo, etc. Os usuários também poderão ajustar configurações do tablet que afetam a todos, como o Wi-Fi."\n\n"Depois que você cria um novo usuário, essa pessoa deve concluir o processo de configuração."\n\n"Qualquer usuário poderá aceitar permissões atualizadas de aplicativos em nome de todos os demais."</string>
     <string name="user_add_user_message_short" msgid="3310933423737035428">"Depois que você cria um novo usuário, essa pessoa deve concluir o processo de configuração."\n\n"Qualquer usuário poderá aceitar permissões atualizadas de aplicativos em nome de todos os demais."</string>
     <string name="user_setup_dialog_title" msgid="1765794166801864563">"Configurar o usuário agora?"</string>
-    <string name="user_setup_dialog_message" product="tablet" msgid="614037943337008555">"Certifique-se de que a pessoa está disponível para assumir o tablet e configurar seu espaço"</string>
+    <string name="user_setup_dialog_message" msgid="614037943337008555">"Certifique-se de que a pessoa está disponível para assumir o tablet e configurar seu espaço"</string>
     <string name="user_setup_button_setup_now" msgid="3391388430158437629">"Configurar agora"</string>
     <string name="user_setup_button_setup_later" msgid="3068729597269172401">"Agora não"</string>
     <string name="user_cannot_manage_message" product="tablet" msgid="8440449301994432789">"Somente o proprietário do tablet pode gerenciar os usuários."</string>
@@ -1831,6 +1831,9 @@
     <string name="user_picture_title" msgid="7297782792000291692">"ID de foto"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Transmissões por celular"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Selecione os tipos de alertas de emergência a exibir."</string>
+
+    <!-- **** CYANOGENMOD ADDITIONS START **** -->
+
     <string name="font_size_preview_text">Sirva este senhor uma cerveja e kiwis.</string>
     <string name="intent_sender_data_label">Dados:</string>
     <string name="debug_intent_sender_label">Depuração do transmissor de intent</string>
@@ -2045,17 +2048,17 @@
     <string name="memory_management_title">Gerenciamento de memória</string>
     <string name="memory_management_summary">Personalizar o uso de memória para mudar o desempenho do sistema</string>
     <string name="pref_zram_title">zRam</string>
-    <string name="pref_zram_summary">Comprime a memória para maior capacidade virtual (requer reinicio)</string>
+    <string name="pref_zram_summary">Comprime a memória para maior capacidade virtual (requer reinicialização)</string>
     <string name="pref_ksm_title">Kernel samepage merging</string>
     <string name="pref_ksm_summary">KSM reduz requisitos de memória fisica e melhora o desempenho</string>
     <string name="pref_purgeable_assets_title">Permitir liberação de recursos</string>
-    <string name="pref_purgeable_assets_summary">Remoção de recursos de memória permite a liberação de mais RAM quando necessária (requer reinicio)</string>
+    <string name="pref_purgeable_assets_summary">Remoção de recursos de memória permite a liberação de mais RAM quando necessária (requer reinicialização)</string>
     <string name="pref_use_dithering_title">Aplicar dithering</string>
     <string name="dithering_no_dither">Desativar pontilhamento</string>
     <string name="dithering_color_banding">Consertar bandas de cores (padrão)</string>
     <string name="dithering_blur_effect">Consertar bandas de cores e efeito de borrar</string>
     <string name="pref_use_16bpp_alpha_title">Transparência 16bit</string>
-    <string name="pref_use_16bpp_alpha_summary">Melhor desempenho gráfico, qualidade mais baixa e posiveis artefatos visuais (requer reinicio)</string>
+    <string name="pref_use_16bpp_alpha_summary">Melhor desempenho gráfico, qualidade mais baixa e possíveis artefatos visuais (requer reinicialização)</string>
     <string name="display_rotation_title">Rotação</string>
     <string name="display_rotation_disabled">Desabilitada</string>
     <string name="display_rotation_unit">graus</string>
@@ -2152,6 +2155,8 @@
     <string name="battery_light_medium_color_title">Carregando</string>
     <string name="battery_light_full_color_title">Totalmente carregada</string>
     <string name="volume_overlay_title">Estilo do painel de volume</string>
+    <string name="volbtn_music_controls_title">Botão volume controla música</string>
+    <string name="volbtn_music_controls_summary">Quando a tela estiver desligada, manter pressionado botão de volume buscará musicas</string>
     <string name="volume_ring_only_description">Toques de celular</string>
     <string name="hardware_keys_title">Teclas físicas</string>
     <string name="hardware_keys_bindings_title">Ações da tecla</string>
@@ -2239,7 +2244,10 @@
     <string name="status_bar_title">Barra de status</string>
     <string name="status_bar_clock_title">Relógio</string>
     <string name="status_bar_general_title">Geral</string>
-       <string name="status_bar_battery_title">Estilo do status da bateria</string>
+    <string name="status_bar_show_clock_title">Mostrar relógio</string>
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
+    <string name="status_bar_am_pm_info">Modo 24-horas do relógio está ativado</string>
+    <string name="status_bar_battery_title">Estilo do status da bateria</string>
     <string name="status_bar_toggle_brightness">Controle de brilho</string>
     <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
     <string name="status_bar_toggle_info">Brilho automático está habilitado</string>
@@ -2250,6 +2258,11 @@
     <string name="status_bar_battery_status_percentage">Porcentagem</string>
     <string name="status_bar_battery_status_circle">Círculo</string>
     <string name="status_bar_battery_status_circle_percentage">Círculo com porcentagem</string>
+    <string name="status_bar_notif_count_title">Mostrar contador de notificação</string>
+    <string name="status_bar_notif_count_summary">Mostrar o número de notificações pendentes na barra de status</string>
+    <string name="display_category_wakeup_options_title">Opções de despertar</string>
+    <string name="pref_volume_wake_title">Despertar com volume</string>
+    <string name="pref_volume_wake_summary">Os botões de volume despertarão o dispositivo.</string>
     <string name="adb_notify">Notificação de depuração USB</string>
     <string name="adb_notify_summary">Exibe uma notificação quando a depuração USB é conectada</string>
     <string name="development_tools_title">Abrir ferramentas</string>
@@ -2301,7 +2314,7 @@
     <string name="title_tile_settings">Configurações</string>
     <string name="title_tile_screen_timeout">Tempo limite de tela</string>
     <string name="title_tile_sound">Som</string>
-    <string name="title_tile_sync">Sincroniação</string>
+    <string name="title_tile_sync">Sincronização</string>
     <string name="title_tile_wifiap">Wi-Fi AP</string>
     <string name="title_tile_wifi">Wi-Fi</string>
     <string name="title_tile_wimax">WiMAX</string>
@@ -2353,7 +2366,8 @@
     <string name="lockscreen_maximize_widgets_title">Maximizar widgets</string>
     <string name="lockscreen_maximize_widgets_summary">Mostrar widgets maximizados e o destravamento minimizado quando a tela é ligada</string>
     <string name="headset_category_title">Fone de ouvido</string>
-    <string name="headset_connect_player_title">Abrir aplicativo de música quando conectar</string>
+    <string name="headset_connect_player_title">Abrir aplicativo de música</string>
+    <string name="headset_connect_player_summary">Abrir aplicativo de música padrão quando o fone de ouvido for conectado</string>
     <string name="bluetooth_mas_request">Requisição de Acesso a Mensagem</string>
     <string name="bluetooth_mas_acceptance_dialog_text">%1$s gostaria de acessar suas mensagens. Conceder acesso para %2$s?</string>
     <string name="bluetooth_mas_remember_choice">Não perguntar novamente</string>
@@ -2394,4 +2408,44 @@
     <string name="auto_brightness_menu_edit_lux">Gama de luminosidade ambiente</string>
     <string name="auto_brightness_menu_split">Dividir</string>
     <string name="auto_brightness_menu_remove">Remover</string>
+    <string name="volume_adjust_sounds_enable_title">Som do ajuste de volume</string>
+    <string name="volume_adjust_sounds_enable_summary">Reproduzir som quando ajustando o volume com o botão externo</string>
+    <string name="advanced_reboot_title">Reinicialização avançada</string>
+    <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu de energia para reincializar para recuperação ou bootloader</string>
+    <string name="lockpattern_settings_enable_error_path_title">Exibir erro no padrão</string>
+    <string name="lockpattern_settings_enable_dots_title">Exibir pontos no padrão</string>
+    <string name="navigation_bar_category">Barra de navegação</string>
+    <string name="navigation_ring_title">Atalhos de início rápido</string>
+    <string name="navring_target_reset_message">Remover todos atalhos de barra de navegação criados pelo usuário e restaurar para o padrão?</string>
+    <string name="navring_target_reset">Atalhos de barra de navegação restaurados para o padrão</string>
+    <string name="navring_target_save">Atalhos de barra de navegação salvos</string>
+    <string name="navring_action_open_ime_switcher">Utilizar alternador IME</string>
+    <string name="navring_action_kill_app">Matar aplicativo</string>
+    <string name="navring_action_none">Nenhum</string>
+    <string name="navring_action_take_screenshot">Capturar tela</string>
+    <string name="navring_action_ring_vibrate">Tocar/Vibrar</string>
+    <string name="navring_action_ring_silent">Tocar/Silencioso</string>
+    <string name="navring_action_ring_vibrate_silent">Tocar/Vibrar/Silencioso</string>
+    <string name="navring_action_screen_off">Desligar tela</string>
+    <string name="navring_action_torch">Lig/Desl. lanterna</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">Escolher ação</string>
+    <string name="swap_volume_buttons_title">Inverter botões de volume</string>
+    <string name="swap_volume_buttons_summary">Inverter botões de volume quando virar a tela</string>
+    <string name="wifi_mode">Modo</string>
+    <string name="wifi_mode_ibss">Rede Ad-Hoc (IBSS)</string>
+    <string name="wifi_mode_ibss_short">Ad-Hoc</string>
+    <string name="pie_control_title">Controles circulares</string>
+    <string name="pie_control_enabled">Ativar quando a área de trabalho Expandida estiver ativa</string>
+    <string name="pie_control_disabled">Desativado</string>
+    <string name="pie_control_size">Tamanho dos botões de navegação</string>
+    <string name="pie_control_trigger_positions">Posições de ativação</string>
+    <string name="pie_control_trigger_left">Borda esquerda da tela</string>
+    <string name="pie_control_trigger_bottom">Borda inferior da tela</string>
+    <string name="pie_control_trigger_right">Borda direita da tela</string>
+    <string name="pie_control_trigger_top">Borda superior da tela</string>
+    <string name="pie_control_trigger_top_summary">Somente navegação sera exibida na parte superior</string>
+    <string name="title_tile_volume">Volume</string>
+    <string name="title_tile_expanded_desktop">Área de trabalho expandida</string>
+    <string name="title_dynamic_dock_battery">Bateria do dock</string>
 </resources>
