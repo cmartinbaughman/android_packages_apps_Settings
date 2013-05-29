@@ -89,7 +89,7 @@ public class Status extends PreferenceActivity {
     private static final String KEY_BT_ADDRESS = "bt_address";
     private static final String KEY_SERIAL_NUMBER = "serial_number";
     private static final String KEY_ICC_ID = "icc_id";
-    private static final String KEY_WIMAX_MAC_ADDRESS = "mac_address";
+    private static final String KEY_WIMAX_MAC_ADDRESS = "wimax_mac_address";
     private static final String[] PHONE_RELATED_ENTRIES = {
         KEY_DATA_STATE,
         KEY_SERVICE_STATE,
@@ -480,11 +480,8 @@ public class Status extends PreferenceActivity {
             if (ps != null) root.removePreference(ps);
         } else {
             Preference wimaxMacAddressPref = findPreference(KEY_WIMAX_MAC_ADDRESS);
-            /*
-		String macAddress = SystemProperties.get("net.wimax.mac.address", getString(R.string.status_unavailable));
-            */
-              String macAddress = SystemProperties.get("persist.wimax.0.MAC", getString(R.string.status_unavailable));
-		wimaxMacAddressPref.setSummary(macAddress);
+            String macAddress = SystemProperties.get("net.wimax.mac.address", getString(R.string.status_unavailable));
+            wimaxMacAddressPref.setSummary(macAddress);
         }
     }
     private void setWifiStatus() {
